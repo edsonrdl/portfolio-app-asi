@@ -21,6 +21,12 @@ const About = () => {
              </p>
           ))}
           
+          <div style={{ marginTop: '50px' }}>
+            <a href="/assets/curriculo.pdf" download="Edson_Arquiteto_CV.pdf" target="_blank" className="btn btn-outline" style={{ border: '1px solid var(--primary)', color: 'var(--primary)', padding: '20px 40px' }}>
+              [ DOWNLOAD CURRÍCULO EM PDF ]
+            </a>
+          </div>
+          
         </div>
         
         <div style={{ gridColumn: 'span 6', display: 'flex', flexDirection: 'column', gap: '24px' }}>
