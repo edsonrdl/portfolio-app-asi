@@ -1,26 +1,26 @@
 export const profile = {
   name: "Edson Rodrigo Damasceno Lopes",
-  role: "Desenvolvedor de Software Full Stack",
-  shortDescription: "Desenvolvedor apaixonado por soluções inovadoras e resultados de impacto.",
+  role: "Engenheiro de Software & Arquiteto",
+  shortDescription: "Projetando arquiteturas de software escaláveis e seguras com integração devops e foco na eficiência.",
   aboutText: [
-    "Com 3 anos de experiência em desenvolvimento Full Stack, minha jornada envolve a criação de sistemas web, desktop e mobile, utilizando tecnologias como Angular, React, Node.js, Spring Boot e ASP.NET Core. Aplicando Clean Architecture e padrões de design, meu foco está em desenvolver soluções escaláveis, robustas e que otimizem processos empresariais.",
-    "Acredito no aprendizado contínuo e na aplicação prática do conhecimento. Minha abordagem proativa e colaborativa visa não apenas a excelência técnica, mas também contribuir para a comunidade tecnológica por meio de soluções compartilhadas e insights práticos. Estou comprometido em criar experiências significativas e impactantes por meio da tecnologia."
+    "Possuo 28 anos e sou um profissional guiado por desafios técnicos de alto impacto, atuando ativamente na evolução e desenho de sistemas que exigem resiliência e alta disponibilidade.",
+    "Minha abordagem é orientada ao System Design e práticas de engenharia de software (DDD, Clean Architecture, SOLID). Busco decisões arquiteturais sólidas, de forma não pretensiosa, para garantir a sustentabilidade do código e a fluidez do time.",
+    "Adoto continuamente processos de DevOps (CI/CD, Docker, Kubernetes) e a Inteligência Artificial como parceira no meu fluxo de pensamento e desenvolvimento. Meu objetivo é sempre unificar a qualidade de software a entregas de valor contínuo aos usuários e às regras de negócio."
   ],
   personalInfo: {
-    Age: 26,
-    Nationality: "Brasileiro",
-    Location: "Belém-PA",
+    Idade: 28,
+    Base: "Sistemas Distribuídos & Cloud",
+    Foco: "Arquitetura",
   },
   stats: [
-    { value: "3+", label: "Anos de Experiência" },
-    { value: "9+", label: "Participações em Projetos" },
-    { value: "15+", label: "Projetos Pessoais" },
-    { value: "4", label: "Projetos em Desenvolvimento" }
+    { value: "Sênior", label: "System Design" },
+    { value: "Cloud", label: "AWS & DevOps" },
+    { value: "Data", label: "Event-Driven & Kafka" },
+    { value: "Agile", label: "Scrum & Kanban" }
   ],
   asiCodeDescription: [
-    "\"Asi\" reflete minha abordagem à codificação, resultado de minha evolução como desenvolvedor. Meu foco é aprimorar constantemente minhas habilidades e compartilhar conhecimento com a comunidade.",
-    "Compartilhando snippets, soluções e insights, busco não apenas demonstrar competência técnica, mas inspirar outros desenvolvedores a explorar a criatividade na programação. \"Asi\" não é apenas um registro da minha jornada, mas um convite para que a comunidade se una na busca contínua pela excelência no desenvolvimento de software.",
-    "Junte-se a mim nesta jornada de aprendizado e descoberta enquanto exploramos o fascinante mundo do desenvolvimento por meio do \"Asi\"."
+    "Acredito no poder da Arquitetura Limpa e no código livre de atritos. Minha marca não dita apenas como organizar linhas de instrução, mas também como observar as camadas de um software como reflexos de soluções de vida real.",
+    "Trabalhando incansavelmente em Integrações, Mensageria (Kafka/RabbitMQ) e Monitoramento Sistêmico (Datadog/Elastic), defendo que as aplicações escaláveis devem ser silenciosas e incrivelmente otimizadas."
   ],
   contacts: {
     email: "edsonrodrigo11111@gmail.com",
@@ -35,125 +35,122 @@ export const profile = {
 
 export const history = {
   experience: [
-    "Desenvolvedor Full Stack com 3 anos de experiência em soluções web, desktop e mobile, utilizando tecnologias como Angular (versões 13 e 18), React, Node.js, Spring Boot e ASP.NET Core, com expertise em servidores JBoss/Tomcat. Aplicando Clean Architecture e Design Patterns, construo sistemas escaláveis e robustos que abrangem APIs RESTful, serviços SOAP, microserviços e integrações avançadas com RabbitMQ, Kafka e Redis.",
-    "Minha atuação inclui desenvolvimento de soluções para áreas como RH, Estoque, Comercial, Técnico, Financeiro e Marketing, com foco em otimização de processos internos e suporte a decisões estratégicas. Como freelancer, desenvolvi aplicativos de comandas e chatbots integrados com a API da Meta, utilizando sistemas de webhooks para automação de eventos e microserviços.",
-    "Possuo experiência prática na implementação de sistemas de mensageria com RabbitMQ para comunicação assíncrona e alta disponibilidade, além de otimização de desempenho com caching via Redis. Utilizo Kafka Connect para captura de dados (Change Data Capture - CDC), promovendo a separação de responsabilidades e permitindo operações de consulta e comando eficientes em ambientes complexos.",
-    "Especialista em desenvolvimento de Single Page Applications (SPAs) com foco em performance e experiência do usuário, aplico práticas de DevOps com ferramentas como Docker e Jenkins para integração e entrega contínua. Tenho experiência em modelagem de dados e persistência com bancos como SQL Server, PostgreSQL, MySQL e Firebird, usando validações robustas e o padrão DAO para garantir modularidade e segurança nos sistemas.",
-    "Minha prática em metodologias ágeis, como Kanban e Scrum, me permite atuar de forma colaborativa, alinhando requisitos técnicos e de negócios. Com habilidades em testes unitários e integrados, asseguro que cada entrega seja robusta e confiável. Meu compromisso é oferecer soluções tecnológicas de alta qualidade, com atenção à inovação e ao aprendizado contínuo."
+    {
+      company: "BRQ Digital Solutions / Itaú Unibanco",
+      period: "Agosto 2025 - Presente",
+      role: "Desenvolvedor & Líder Técnico em Arquitetura",
+      description: "Atuação estratégica nas plataformas de Catálogo e Ofertas do banco privado. Sustentação de ecossistemas Serverless (AWS Lambda, SNS, SQS, Terraform) e mensageria de transações via MSK Kafka.",
+      bullets: [
+        "Design de Microserviços e migração usando Strangler Fig (Monolítico para Distribuído).",
+        "Implementação de Domain-Driven Design (DDD), Clean Architecture e CQRS.",
+        "DevOps: Cloud 100% como Código utilizando Terraform (IaC) com Datadog.",
+        "Liderança Técnica com mentorias e revisões arquiteturais focadas em code-quality."
+      ]
+    },
+    {
+      company: "FADESP / SEFA-PA",
+      period: "Fevereiro 2025 - Presente",
+      role: "Engenheiro Backend e Projetista de Microserviços",
+      description: "Modernização das plataformas digitais para a área Fiscal e Tributária do Estado do Pará. Otimização de sistemas críticos no suporte de arrecadação.",
+      bullets: [
+        "Modernização gradual para microserviços em Kubernetes e OpenShift.",
+        "Implementação de filas de assincronia e mensageria de impostos com RabbitMQ e Kafka.",
+        "Operação CI/CD automatizado com GitLab, Jenkins, ArgoCD e Harbor.",
+        "Garantia de escalamento com Java 17, Spring e métricas no stack ELK."
+      ]
+    },
+    {
+      company: "Máxima Segurança",
+      period: "Abril 2024 - Junho 2025",
+      role: "Arquiteto de Software Corporativo",
+      description: "Prestação de serviços de desenvolvimento e arquitetura para um sistema base on-premises em Proxmox. Levantamento de requisitos até o design macro.",
+      bullets: [
+        "Modelagem física conceitual e definição completa da topologia dos serviços on-premise.",
+        "Separação de contexto estrita (DDD) aliada à modelagem ágil com RabbitMQ + PostgreSQL + MongoDB.",
+        "Responsável por esteiras de Deploy, CI/CD Pipeline e gestão conteinerizada usando Docker."
+      ]
+    },
+    {
+      company: "Projetos Pessoais & Freelancers",
+      period: "Contínuo",
+      role: "Full Stack Engineer & Tech Discovery",
+      description: "P&D voltado ao desenvolvimento de chatbots de alta integração (API Meta), e plataformas de gestão Web/Mobile.",
+      bullets: [
+        "Adoção intensa de recursos de IA para produtividade de ponta a ponta.",
+        "Desenvolvimentos de frameworks com Angular 18, React Native e Spring Boot."
+      ]
+    }
   ],
   education: [
-    "Sou bacharelando em Sistemas de Informação pela Universidade Estácio de Sá, Campus IESAM, em Belém, PA, com uma trajetória que transcende os limites acadêmicos e reflete um profundo compromisso com o desenvolvimento profissional e técnico. Iniciei minha jornada como programador antes de ingressar na universidade, guiado por uma paixão pela tecnologia e uma autodisciplina que impulsionou meu crescimento no setor.",
-    "Minha busca constante por conhecimento e práticas eficientes me permitiu desenvolver habilidades abrangentes e adaptáveis, indo além do ambiente educacional formal. Acredito que o aprendizado não é um destino, mas uma jornada contínua, e me empenho em antecipar tendências, aprofundar conceitos críticos e aplicar soluções eficazes no desenvolvimento de software.",
-    "Sou reconhecido pela organização, capacidade de execução e autonomia na busca por soluções. No entanto, também valorizo o trabalho colaborativo, sabendo que grandes conquistas dependem do apoio mútuo e do compartilhamento de experiências. Busco criar ambientes de aprendizado coletivo, nos quais a troca de ideias e a evolução conjunta são a base para o sucesso.",
-    "Além do foco na excelência técnica, tenho uma forte inclinação para o compartilhamento de conhecimento e desenvolvimento de boas práticas que agreguem valor à comunidade. Essa mentalidade de constante crescimento e colaboração impulsiona minha atuação tanto em projetos individuais quanto em iniciativas de impacto organizacional."
-  ],
-  interests: [
-    "Sou um profissional motivado por desafios e focado em alcançar resultados consistentes. Tenho uma paixão genuína por adquirir e aplicar conhecimento, com forte compromisso em implementar as melhores práticas de programação, buscando excelência em cada projeto, seja pessoal ou profissional.",
-    "Minhas habilidades de aprendizado rápido, aliadas à persistência e abordagem didática, me permitem absorver e compartilhar conceitos complexos de forma clara e eficaz. Enxergo o aprendizado e o ensino como pilares essenciais, especialmente no campo dinâmico da tecnologia, onde as inovações são constantes e impactam a qualidade de vida e os negócios.",
-    "Minha busca autônoma por conhecimento e evolução profissional tem sido um diferencial em minha trajetória. Com origens acadêmicas em Biomedicina e transição bem-sucedida para a área de TI, cada etapa reforçou meu compromisso com o crescimento contínuo e a adaptação a novas demandas. Minha jornada como desenvolvedor reflete determinação, versatilidade e a busca constante por desafios que impulsionem meu desenvolvimento e contribuam para resultados de alto impacto."
+    "Bacharelado em Sistemas de Informação - Universidade Estácio de Sá, Campus IESAM (Belém - PA)",
+    "Foco avançado em Data Structures, Padrões SOLID e Cloud Computing extracurriculares."
   ]
 };
 
 export const projects = [
   {
     id: "chatbot",
-    type: "Full Stack",
-    title: "Chatbot Whatsapp API",
-    description: "Chatbot assistente whatsapp para vendas com Sistema gerenciador com Dashboard.",
-    status: "Em Desenvolvimento",
-    images: [
-      "/assets/projects/chatbot whatsapp api/img-1-chatbot-whatsapp-api.png",
-      "/assets/projects/chatbot whatsapp api/img-2-chatbot-whatsapp-api.png",
-      "/assets/projects/chatbot whatsapp api/img-3-chatbot-whatsapp-api.png",
-      "/assets/projects/chatbot whatsapp api/img-4-chatbot-whatsapp-api.png",
-      "/assets/projects/chatbot whatsapp api/img-5-chatbot-whatsapp-api.png"
-    ],
-    video: "/assets/projects/Videos/chatbotWhatsapAPI.mp4",
-    techs: ["HTML", "CSS", "JavaScript", "Java", "Spring Boot", "MySQL"],
+    type: "Arquitetura e Integração",
+    title: "Chatbot WhatsApp com Dashboards",
+    description: "Sistema focado em processamento natural assistivo para captação de Vendas conectado através de microserviços Spring e MySQL.",
+    status: "Operacional",
+    images: [],
+    techs: ["Java", "Spring Boot", "Webhooks", "API Restful"],
     github: "https://github.com/edsonrdl/envio-de-mensagens-simples-whatsapp-api",
-    preview: null,
-    info: ""
-  },
-  {
-    id: "dashboard",
-    type: "Front-end",
-    title: "Gerenciador de Sistema",
-    description: "Dashboard com análise de vendas e pesquisa de pedidos",
-    status: "Em Desenvolvimento",
-    images: [
-      "/assets/projects/system management dashboard tema ligth dark/img-1-system-management.png",
-      "/assets/projects/system management dashboard tema ligth dark/img-2-system-management.png"
-    ],
-    techs: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/edsonrdl/sistema-gerenciador-dashboard-tema-escuro-claro",
-    preview: "https://edsonrdl.github.io/system-management-admin-dashboard-theme-dark-ligth/#",
-    info: ""
+    preview: null
   },
   {
     id: "crud-clean",
-    type: "Full Stack",
-    title: "CRUD Clean Architecture",
-    description: "Projeto de Prática: Implementando Clean Architecture e Padrões em um CRUD de Clientes com Redis",
-    status: "Finalizado",
-    images: [
-      "/assets/projects/crud-clean-architecture-patterns-dao/img-1.png",
-      "/assets/projects/crud-clean-architecture-patterns-dao/img-3.png"
-    ],
-    techs: ["HTML", "CSS", "JavaScript", "Spring Boot", "PostgreSQL", "Redis", "Docker"],
+    type: "System Design",
+    title: "Clean Architecture em Cadastro Cliente",
+    description: "Laboratório de engenharia profunda abordando a segregação de dependências e Clean Architecture apoiado com uso de cache (Redis) e contêineres.",
+    status: "Concluído",
+    images: [],
+    techs: ["Java", "Docker", "Redis", "DDD"],
     github: "https://github.com/edsonrdl/project-crud-clean-architecture-patterns-dao",
-    preview: null,
-    info: ""
+    preview: null
   },
   {
     id: "cdc-kafka",
     type: "Engenharia de Dados",
-    title: "CAPTURA DE DADOS",
-    description: "Projeto que utiliza Kafka e CDC para integrar dados em tempo real em uma arquitetura orientada a eventos, capturando e sincronizando alterações entre bancos de dados com Kafka Connect.",
-    status: "Repositório Privado",
-    images: [
-      "/assets/projects/change-data-capture-kafka/kafka connect.png"
-    ],
-    video: "/assets/projects/Videos/projeto-cdc-kafka.mp4",
+    title: "Data Streaming com Kafka CDC",
+    description: "Aplicação focada no ecossistema Kafka e Debezium (Kafka Connect) visando propagar fluxos de dados de bancos isolados em tempo real na nuvem.",
+    status: "Back-end Interno",
+    images: [],
     techs: ["Apache Kafka", "Docker", "MySQL", "PostgreSQL"],
     github: null,
-    preview: null,
-    info: "Kafka e CDC: Integração de Dados em Tempo Real - Arquitetura orientada a eventos..."
+    preview: null
   },
   {
     id: "order-sys",
-    type: "Back-end",
-    title: "Processamento de pedidos",
-    description: "Demonstrar o uso de RabbitMQ em uma arquitetura de microserviços. Processamento do pedido serão roteadas para filas apropriadas por meio de routing keys.",
-    status: "Em Desenvolvimento",
-    images: [
-      "/assets/projects/order-processing-system/order-processing-system.png"
-    ],
-    techs: [".NET Core", "Node.js", "MongoDB", "RabbitMQ", "Docker"],
+    type: "Mensageria",
+    title: "Microsystem Processador de Transações",
+    description: "Estudo de caso massivo sobre resiliência a falhas empregando filas distribuídas e roteamentos através do middleware RabbitMQ.",
+    status: "Em evolução",
+    images: [],
+    techs: [".NET Core", "Node.js", "RabbitMQ", "MongoDB"],
     github: "https://github.com/edsonrdl/order-processing-system.git",
-    preview: null,
-    info: "Sistema de Processamento de Pedidos com RabbitMQ em microsserviços."
+    preview: null
   },
   {
-    id: "flash-serve",
-    type: "Mobile",
-    title: "Comanda Simples",
-    description: "App mobile para anotações de pedidos, utilizado figma para criar o protótipo e firebase para dados em tempo real",
-    status: "Repositório Privado",
-    images: [
-      "/assets/projects/flash-serve/img-1-flash-serve.png",
-      "/assets/projects/flash-serve/img-2-flash-serve.png"
-    ],
-    video: "/assets/projects/Videos/flash-serve.mp4",
-    techs: ["React Native", "Figma", "Firebase"],
+    id: "sistema-gestao",
+    type: "Full Stack ERP",
+    title: "Plataforma de Gestão SPA",
+    description: "Desenvolvimento de frontend web com SPA em Angular 18 alimentado via APIs REST seguras providas por Spring Boot, PostgreSQL e Cache em redis resolvendo gargalos de request.",
+    status: "Suporte",
+    images: [],
+    techs: ["Angular 18", "Spring Boot", "PostgreSQL", "Redis"],
     github: null,
-    preview: null,
-    info: ""
+    preview: null
   }
 ];
 
 export const skillsList = [
-  "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "React Native", "SASS", "Figma",
-  "Delphi", "C#", "Java", "ASP.NET Core", ".NET Core", "Spring Boot", "Hibernate", "Entity Framework", "Node.js", "Firebase", "Firebird", "MongoDB", "MySQL", "PostgreSQL", "Redis", "SQL Server",
-  "Docker", "Kubernetes", "Jenkins",
-  "Git", "GitHub", "GitLab", "AWS", "Postman", "API REST", "MVC", "Clean Architecture", "Mobile", "RabbitMQ", "Apache Kafka", "JBoss", "Tomcat", "Linux"
+  "Java 8 às 21 (EE)", "Spring Boot & Framework", "C# & .NET Core", 
+  "Clean Architecture", "Arquitetura Hexagonal", "System Design & DDD", "SOLID & DRY", 
+  "Microserviços & Monólitos", "RabbitMQ", "Kafka & Kafka Connect", 
+  "AWS (Lambda, Glue, SNS, SQS, MSK)", "Terraform (IaC)", "Docker & Kubernetes", 
+  "Jenkins, GitLab CI/CD, ArgoCD", "Datadog, Grafana, ELK Stack", 
+  "SQL Server, PostgreSQL, MySQL", "DocumentDB & MongoDB", "Redis & Cache", 
+  "Desenvolvimento Web (Angular 18, AngularJS, React Native)"
 ];
