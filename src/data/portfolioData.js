@@ -25,7 +25,7 @@ export const profile = {
   contacts: {
     email: "edsonrodrigo11111@gmail.com",
     phone: "+55 (91) 99169-3284",
-    linkedin: "https://www.linkedin.com/in/edson-rodrigo-lopes-62b016263/",
+    linkedin: "https://www.linkedin.com/in/edson-rodrigo-lopes/",
     github: "https://github.com/edsonrdl",
     instagram: "https://www.instagram.com/_edsonrd_lopes/",
     instagramAsi: "https://www.instagram.com/_asi_code/",

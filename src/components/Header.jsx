@@ -15,9 +15,11 @@ const Header = () => {
   return (
     <header className={`header-nav ${scrolled ? 'glass' : ''}`}>
       <div className="header-container">
-        <a href="#" className="logo-wrapper">
-          <img src="/assets/asi-logo.svg" alt="Asi" className="logo-icon" />
-          <div className="logo-text">ASI<span>.</span></div>
+        <a href="#" className="logo-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          <img src="/assets/asi-logo.svg" alt="Asi" className="logo-icon" style={{ width: '45px', filter: 'drop-shadow(0 0 15px rgba(244,95,144,0.5))', transition: 'all 0.3s ease' }} />
+          <div className="logo-text" style={{ fontSize: '1.5rem', fontWeight: 800, letterSpacing: '2px', textShadow: '0 0 20px rgba(244,95,144,0.4)', color: 'var(--text-main)' }}>
+            ASI<span style={{ color: 'var(--primary)' }}>.</span>
+          </div>
         </a>
 
         <nav className="nav-desktop">
