@@ -10,7 +10,7 @@ const Contact = () => {
       </h2>
       
       <a href={`mailto:${profile.contacts.email}`} style={{ display: 'block', marginBottom: '60px' }}>
-         <h1 className="display-title text-stroke" style={{ fontSize: 'clamp(2rem, 6vw, 6rem)', transition: 'all 0.3s ease' }}>
+         <h1 className="display-title text-stroke" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)', transition: 'all 0.3s ease' }}>
             {profile.contacts.email}
          </h1>
       </a>
