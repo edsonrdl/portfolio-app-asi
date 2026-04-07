@@ -2,20 +2,38 @@ import React from 'react';
 import '../styles/TechCube.css';
 
 const TechCube = () => {
-  // Lista de logomarcas reais: Java = openjdk por licença. AWS = amazon / aws.
+  /**
+   * Slugs extraídos do seu currículo e validados para cdn.simpleicons.org
+   * AWS = amazonaws
+   * Java = openjdk
+   * Kubernetes = kubernetes
+   * Terraform = terraform
+   */
   const devIcons = [
-    "openjdk", "spring", "aws", "angular", "react", "docker", 
-    "kubernetes", "apachekafka", "postgresql", "terraform", "rabbitmq", "redis"
+    "openjdk",      // Java 8/17/21 (Fadesp/Itaú/Máxima)
+    "spring",       // Spring Boot / Framework
+    //"awsservices",    // Cloud AWS (Lambda, SQS, SNS, Glue)
+    "angular",      // Angular Moderno (14/18)
+    "terraform",    // IaC (Itaú)
+    "docker",       // Containers (Harbor/Rancher)
+    "kubernetes",   // Orquestração (OpenShift)
+    "apachekafka",  // Mensageria (MSK / Kafka Connect)
+    "postgresql",   // Persistence (Relacional)
+    "mongodb",      // DocumentDB / NoSQL
+    "rabbitmq",     // Mensageria Assíncrona
+    "redis"         // Caching (Freelancer/Performance)
   ];
 
   const getFaceCells = (offset) => {
     return Array.from({ length: 9 }).map((_, i) => {
-      // Pega o termo respectivo da logo
       const iconSlug = devIcons[(offset + i) % devIcons.length];
       
       return (
         <div key={i} className="cube-cell" title={iconSlug}>
           <img 
+            /* Dica técnica: O sufixo /f45f90 define a cor. 
+               Se quiser a cor original de cada marca, remova o /f45f90 
+            */
             src={`https://cdn.simpleicons.org/${iconSlug}/f45f90`} 
             alt={iconSlug} 
             className="cube-tech-icon" 
@@ -28,6 +46,7 @@ const TechCube = () => {
   return (
     <div className="cube-container">
       <div className="cube">
+        {/* Offsets calculados para distribuir a senioridade da stack nas faces */}
         <div className="cube-face front">{getFaceCells(0)}</div>
         <div className="cube-face back">{getFaceCells(2)}</div>
         <div className="cube-face right">{getFaceCells(4)}</div>
