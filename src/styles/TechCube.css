@@ -1,0 +1,87 @@
+/* TechCube.css Elevando a percepção visual do objeto 3D sem atrapalhar a interface */
+.cube-container {
+  width: 300px;
+  height: 300px;
+  perspective: 1200px;
+  
+  /* Posição super tática no layout! */
+  position: fixed;
+  right: -5%;
+  top: 15%; /* Na altura do header ou flutuando num canto vazio lateral */
+  z-index: 0;
+  
+  /* Opacidade e Presença */
+  opacity: 0.6; /* Muito mais vivo que os 15% iniciais */
+  filter: drop-shadow(0 0 50px var(--primary-faded));
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  transform: scale(0.85); /* Elegante no espaço */
+}
+
+/* Interação com tela */
+@media (max-width: 1400px) {
+  .cube-container { right: -10%; opacity: 0.4; }
+}
+@media (max-width: 768px) {
+  .cube-container {
+    right: 50%;
+    transform: translateX(50%) scale(0.5);
+    bottom: -10%;
+    top: auto;
+    opacity: 0.3;
+  }
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spinCube 45s infinite cubic-bezier(0.4, 0, 0.2, 1); /* Animação mais suave e oscilante simulando gravidade */
+}
+
+.cube-face {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(15, 16, 21, 0.6); /* Dark base do app */
+  border: 1px solid rgba(244, 95, 144, 0.3); /* Rosa sutil */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: inset 0 0 80px rgba(244, 95, 144, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.cube-cell {
+  border: 1px dashed rgba(244, 95, 144, 0.15); /* Grade Neon de Fibra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px; /* Abre espaço pros icones SVGs grandões */
+}
+
+/* O SVG da marca-d'água colorizado acompanhando o tom primário */
+.cube-tech-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px var(--primary)); /* Glow em volta do icone vetorial */
+  opacity: 0.9;
+}
+
+/* Trigonométrica Pura e Translacional */
+.cube-face.front  { transform: translateZ(150px); }
+.cube-face.back   { transform: rotateY(180deg) translateZ(150px); }
+.cube-face.right  { transform: rotateY(90deg) translateZ(150px); }
+.cube-face.left   { transform: rotateY(-90deg) translateZ(150px); }
+.cube-face.top    { transform: rotateX(90deg) translateZ(150px); }
+.cube-face.bottom { transform: rotateX(-90deg) translateZ(150px); }
+
+/* Keyframes Refinados de Oscilação - Efeito Suspenso sem Loop brusco */
+@keyframes spinCube {
+  0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  33% { transform: rotateX(120deg) rotateY(240deg) rotateZ(180deg); }
+  66% { transform: rotateX(240deg) rotateY(480deg) rotateZ(270deg); }
+  100% { transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg); }
+}

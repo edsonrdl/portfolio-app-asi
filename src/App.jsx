@@ -5,6 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import TechCube from './components/TechCube';
 
 import './index.css';
 import './styles/components.css';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <TechCube />
       <main style={{ marginTop: '30px' }}>
         <Hero />
         <Portfolio />
