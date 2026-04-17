@@ -52,15 +52,14 @@ Um portfólio moderno e responsivo construído com React e Vite, apresentando um
 4. **Abra no navegador**:
    Acesse `http://localhost:5173` (porta padrão do Vite).
 
-### Build para produção
+### Deploy para GitHub Pages
 ```bash
-npm run build
+npm run deploy
 ```
 
-### Preview do build
-```bash
-npm run preview
-```
+Isso irá buildar o projeto e publicar na branch `gh-pages` do seu repositório. Certifique-se de que o repositório está público e que o GitHub Pages está configurado para usar a branch `gh-pages`.
+
+**Nota**: O projeto está configurado com `base: '/portfolio-react-app/'` no `vite.config.js` para funcionar corretamente no subpath do GitHub Pages.
 
 ## 📁 Estrutura do Projeto
 
