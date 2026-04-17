@@ -28,31 +28,38 @@ Um portfólio moderno e responsivo construído com React e Vite, apresentando um
 ## 📦 Instalação e Execução
 
 ### Pré-requisitos
+
 - Node.js (versão 16 ou superior)
 - npm ou yarn
 
 ### Passos para rodar localmente
 
 1. **Clone o repositório**:
+
    ```bash
    git clone https://github.com/seu-usuario/portfolio-web.git
    cd portfolio-web
    ```
-
 2. **Instale as dependências**:
+
    ```bash
    npm install
    ```
-
 3. **Execute o servidor de desenvolvimento**:
+
    ```bash
    npm run dev
    ```
+4. **Instale o pacote como dependência de desenvolvimento:**:
 
-4. **Abra no navegador**:
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+5. **Abra no navegador**:
    Acesse `http://localhost:5173` (porta padrão do Vite).
 
 ### Deploy para GitHub Pages
+
 ```bash
 npm run deploy
 ```
