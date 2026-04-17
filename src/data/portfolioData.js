@@ -3,9 +3,9 @@ export const profile = {
   role: "Software Engineer & Architect",
   shortDescription: "Transformando necessidades de negócio em ecossistemas escaláveis e seguros, com forte foco em Cloud, Microserviços e DevOps.",
   aboutText: [
-    "Sou um Engenheiro de Software com experiência comprovada na concepção, modernização e operação de sistemas críticos em instituições gigantes como Itaú Unibanco e instâncias governamentais (SEFA-PA). Minha atuação combina uma visão arquitetônica afiada com capacidade de execução pragmática, atuando do backend (Java, .NET, Spring) à infraestrutura como código (AWS, Terraform, Kubernetes).",
-    "Vejo a tecnologia como habilitadora de eficiência. Portanto, adoto constantemente a mentalidade de DevOps, integração contínua (CI/CD) e padrões como Clean Architecture e Event-Driven Design para construir soluções que não só resolvam problemas de hoje, mas tolerem a alta demanda de amanhã.",
-    "Movido pelo aprendizado contínuo, aprimoro minha produtividade absorvendo as inovações em Inteligência Artificial no fluxo de trabalho. Adoro liderar tecnicamente, possuindo uma didática natural para disseminar conhecimento, realizar mentorias e alinhar times de alto rendimento às entregas sólidas e estratégicas que as corporações exigem."
+    "Sou um desenvolvedor e analista de sistemas forjado na realidade de que a tecnologia deve servir ao negócio, e não o contrário. Com atuação que transita entre a altíssima disponibilidade de gigantes financeiros (Itaú Unibanco), a complexidade regulatória governamental (SEFA-PA) e o dinamismo de empresas de médio e pequeno porte, minha abordagem foge da adoção cega de \"tecnologias da moda\".",
+    "Entendo que o ciclo de vida do desenvolvimento de software exige pragmatismo. Uma arquitetura eficiente não é necessariamente aquela que utiliza dezenas de microsserviços, mas sim aquela que se encaixa perfeitamente no orçamento, no momento operacional e na maturidade da equipe do cliente. Do backend profundo (Java, Spring, .NET) ao provisionamento de infraestrutura (AWS, Terraform, Proxmox), meu foco é ler o ecossistema existente, diagnosticar gargalos e projetar soluções — sejam elas a construção de um novo produto do zero ou a reestruturação cirúrgica de um sistema com mais de 10 anos de operação.",
+    "Acredito que liderar tecnicamente é, acima de tudo, transferir conhecimento. Utilizo minha didática para nivelar times, garantindo que as decisões de design sejam compreendidas e sustentadas pela equipe no longo prazo."
   ],
   personalInfo: {
     Base: "Sistemas Distribuídos & Cloud",
@@ -18,8 +18,9 @@ export const profile = {
     { value: "LÍDER", label: "Mentoria Técnica & Visão de Produto" }
   ],
   asiCodeDescription: [
-    "Minha filosofia técnica orbita em torno do lema de que softwares corporativos escaláveis devem ser silenciosos, resilientes e transparentes para a operação. Acredito firmemente que a Arquitetura Limpa e soluções desacopladas liberam o potencial total das equipes de desenvolvimento.",
-    "Seja modelando fluxos complexos, liderando refinamentos técnicos com Domain-Driven Design (DDD) ou projetando topologias complexas de Cloud, meu foco é sempre impulsionar times para uma cultura de eficiência operacional baseada em automação."
+    "A filosofia por trás da Advanced System Intelligence fundamenta-se na premissa de que sistemas inteligentes resolvem problemas reais sem criar novos passivos operacionais. Não acredito na \"reescrita total\" como primeira opção. A verdadeira inteligência de sistemas está em encontrar o ponto ótimo de eficiência dentro das restrições do cliente.",
+    "A decisão de arquitetura sempre carrega perdas e ganhos que precisam ser medidos contra a realidade da empresa. Por exemplo, adotar uma arquitetura de microsserviços tem a clara vantagem de permitir deploys independentes e escalabilidade horizontal sob demanda. No entanto, a desvantagem imposta por essa escolha é a drástica elevação da complexidade de infraestrutura: passa-se a lidar com latência de rede, transações distribuídas (Sagas) e a necessidade de observabilidade avançada. Se o cenário da empresa não suporta essa carga cognitiva e financeira, um Monólito Modular governado por Domain-Driven Design (DDD) frequentemente entrega a mesma organização de código e governança, mas operando na memória local, sem o custo da rede.",
+    "O objetivo da ASI é construir pontes seguras entre o legado estabilizado e o futuro escalável, alinhando automação, resiliência e, acima de tudo, retorno sobre o investimento."
   ],
   contacts: {
     email: "edsonrodrigo11111@gmail.com",
@@ -162,5 +163,36 @@ export const projects = [
     techs: [".NET Core", "Node.js", "RabbitMQ", "MongoDB"],
     github: "https://github.com/edsonrdl/order-processing-system.git",
     preview: null
+  }
+];
+
+export const consultingServices = [
+  {
+    id: "migracao",
+    title: "Migração e Modernização de Sistemas Legados",
+    description: "O cenário mais comum no mundo corporativo é o sistema antigo que \"paga as contas\", mas que trava a inovação (ex: monolitos em Delphi ou versões antigas de Java).",
+    execution: "A Execução: Em vez de desligar o sistema antigo e tentar construir um novo (abordagem de altíssimo risco), aplicamos o padrão Strangler Fig. O sistema novo é construído em volta do legado, interceptando chamadas na borda (via API Gateways).",
+    outcome: "Análise de Escolha: A vantagem imediata é a mitigação de risco, permitindo entregas contínuas e validação antecipada em produção. A desvantagem é o esforço inicial de manter ambos os sistemas rodando em paralelo e a necessidade de criar estratégias de sincronização bidirecional até o desligamento total do legado."
+  },
+  {
+    id: "integracao",
+    title: "Integração, Sincronização de Dados e Mensageria",
+    description: "Empresas crescem e adquirem diferentes softwares (ERPs, CRMs, sistemas de faturamento) que não se comunicam.",
+    execution: "A Execução: Arquitetura orientada a eventos para garantir que a informação flua em tempo real. Implementação de padrões de captura de dados (Change Data Capture - CDC) direto do log do banco de dados (usando ferramentas como Kafka Connect e Debezium), propagando as mudanças sem onerar a performance da aplicação de origem.",
+    outcome: "Cenário Cotidiano: Um e-commerce precisa atualizar o estoque no ERP on-premises e disparar o faturamento simultaneamente. Uma fila RabbitMQ ou um tópico Kafka garante que, mesmo se o ERP estiver fora do ar por 10 minutos, a mensagem seja retida e processada logo que o serviço retornar, evitando a perda financeira."
+  },
+  {
+    id: "auditoria",
+    title: "Auditoria Arquitetural e \"Right-Sizing\"",
+    description: "Muitas empresas médias sofrem com contas de nuvem (AWS/Azure) astronômicas por usarem serviços mal dimensionados ou arquiteturas over-engineered.",
+    execution: "A Execução: Mapeamento profundo de como os dados são lidos e gravados. Se um serviço recebe milhares de leituras para poucas gravações, a implementação de uma camada de cache (Redis) ou a segregação de bancos (CQRS) pode reduzir drasticamente o consumo de CPU do banco de dados principal.",
+    outcome: "Análise de Escolha: A vantagem é a redução imediata de custos de infraestrutura e tempo de resposta; a perda associada é a necessidade de lidar com a invalidação de cache e a consistência eventual dos dados apresentados ao usuário."
+  },
+  {
+    id: "sustentacao",
+    title: "Sustentação Evolutiva e Mentoria de Times",
+    description: "Para empresas que possuem desenvolvedores internos, mas carecem de direcionamento arquitetural sênior.",
+    execution: "A Execução: Atuação como Staff/Principal Engineer sob demanda. Revisão de código estrutural, implementação de esteiras de automação de testes/deploy (CI/CD) para barrar quebras em produção, e treinamento prático da equipe local em padrões como Clean Architecture e SOLID, elevando o nível técnico do time residente.",
+    outcome: null
   }
 ];

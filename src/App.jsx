@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Experience from './components/Experience';
+import Services from './components/Services';
 import Contact from './components/Contact';
 import TechCube from './components/TechCube';
 
@@ -20,6 +21,7 @@ function App() {
         <Portfolio />
         <About />
         <Experience />
+        <Services />
         <Contact />
       </main>
       
