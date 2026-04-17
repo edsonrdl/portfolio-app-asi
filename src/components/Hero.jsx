@@ -29,7 +29,8 @@ const Hero = () => {
         </div>
 
         <p style={{ maxWidth: '600px', fontSize: '1.25rem', color: 'var(--text-muted)', marginBottom: '50px', animation: 'fadeIn 1.5s ease-out forwards' }}>
-          {profile.shortDescription} Design moderno, código fluido e experiências web de impacto.
+          {profile.shortDescription}
+
         </p>
 
         <div style={{ display: 'flex', gap: '24px', animation: 'fadeIn 2s ease-out forwards' }}>

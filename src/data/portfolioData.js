@@ -1,7 +1,7 @@
 export const profile = {
   name: "Edson Rodrigo Damasceno Lopes",
   role: "Software Engineer & Architect",
-  shortDescription: "Transformando necessidades de negócio em ecossistemas escaláveis e seguros, com forte foco em Cloud, Microserviços e DevOps.",
+  shortDescription: "Desenvolvimento Full Stack ponta a ponta fundamentado no pragmatismo. Transformo desafios de negócio em soluções de software completas — desde a criação de aplicações web e mobile dinâmicas até a construção de integrações e arquiteturas robustas no backend e na nuvem.",
   aboutText: [
     "Sou um desenvolvedor e analista de sistemas forjado na realidade de que a tecnologia deve servir ao negócio, e não o contrário. Com atuação que transita entre a altíssima disponibilidade de gigantes financeiros (Itaú Unibanco), a complexidade regulatória governamental (SEFA-PA) e o dinamismo de empresas de médio e pequeno porte, minha abordagem foge da adoção cega de \"tecnologias da moda\".",
     "Entendo que o ciclo de vida do desenvolvimento de software exige pragmatismo. Uma arquitetura eficiente não é necessariamente aquela que utiliza dezenas de microsserviços, mas sim aquela que se encaixa perfeitamente no orçamento, no momento operacional e na maturidade da equipe do cliente. Do backend profundo (Java, Spring, .NET) ao provisionamento de infraestrutura (AWS, Terraform, Proxmox), meu foco é ler o ecossistema existente, diagnosticar gargalos e projetar soluções — sejam elas a construção de um novo produto do zero ou a reestruturação cirúrgica de um sistema com mais de 10 anos de operação.",
