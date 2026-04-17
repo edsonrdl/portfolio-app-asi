@@ -85,32 +85,36 @@
   transition: all var(--transition-slow);
 }
 
-.project-card::before {
-  content: '';
+.project-overlay {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(to top, rgba(7, 7, 9, 0.95) 0%, rgba(7, 7, 9, 0.2) 100%);
+  background: linear-gradient(to top, rgba(7, 7, 9, 0.98) 0%, rgba(7, 7, 9, 0.6) 40%, rgba(7, 7, 9, 0.2) 100%);
   z-index: 1;
+  transition: all var(--transition-slow);
 }
 
-.project-bg-image {
+.project-bg-media {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   object-fit: cover;
   transition: var(--transition-slow);
-  opacity: 0.5;
-  filter: grayscale(100%);
+  opacity: 0.6;
+  filter: grayscale(30%) brightness(0.8);
 }
 
-.project-card:hover .project-bg-image {
-  transform: scale(1.1);
-  opacity: 0.8;
-  filter: grayscale(0%);
+.project-card:hover .project-bg-media {
+  transform: scale(1.05);
+  opacity: 1;
+  filter: grayscale(0%) brightness(1);
+}
+
+.project-card:hover .project-overlay {
+  background: linear-gradient(to top, rgba(7, 7, 9, 0.95) 0%, rgba(7, 7, 9, 0.3) 40%, rgba(7, 7, 9, 0.1) 100%);
 }
 
 .project-card:hover {
   border-color: var(--primary);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
 
 .project-content {
@@ -168,6 +172,111 @@
   background: var(--primary-faded);
   color: #fff;
   transform: scale(1.05);
+}
+
+/* --- Modal Lightbox de Mídia --- */
+.media-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(7, 7, 9, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.media-modal-content {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid rgba(244, 95, 144, 0.3);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 50px rgba(244, 95, 144, 0.1);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: floatUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px; right: 20px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+}
+
+.modal-body {
+  flex: 1;
+  overflow: auto;
+  max-height: calc(90vh - 80px); /* Deixa espaço pro footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px 20px;
+}
+
+.modal-media-element {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  object-fit: contain;
+}
+
+/* Scroll lateral bonito pra galeria se houver varias imgs */
+.modal-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  align-items: center;
+  max-width: 100vw;
+}
+.gallery-img { max-height: 60vh; }
+
+.modal-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+.modal-gallery::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+.modal-gallery::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+.modal-footer {
+  padding: 20px;
+  background: rgba(15, 16, 21, 0.95);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+.modal-footer h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* Responsivo */

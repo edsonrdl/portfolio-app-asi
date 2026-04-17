@@ -141,7 +141,8 @@ export const projects = [
     images: [],
     techs: ["Java", "Spring Boot", "Webhooks", "API Restful"],
     github: "https://github.com/edsonrdl/envio-de-mensagens-simples-whatsapp-api",
-    preview: null
+    preview: null,
+    video: "/assets/projects/Videos/chatbotWhatsapAPI.mp4"
   },
   {
     id: "crud-clean",
@@ -149,7 +150,7 @@ export const projects = [
     title: "Arquitetura Global de Autenticação",
     description: "Laboratório de engenharia abordando segregação por Clean Architecture e camada de Cache para resiliência massiva.",
     status: "Concluído",
-    images: [],
+    images: ["/assets/projects/crud-clean-architecture-patterns-dao/img-clean-architecture.png"],
     techs: ["Java", "Redis", "Docker", "DDD"],
     github: "https://github.com/edsonrdl/project-crud-clean-architecture-patterns-dao",
     preview: null
@@ -160,10 +161,11 @@ export const projects = [
     title: "Change Data Capture (Debezium)",
     description: "Projeto orquestrando Kafka e Debezium (Kafka Connect) visando propagar fluxos de dados transacionais on-premises em tempo sincrono.",
     status: "Back-end Interno",
-    images: [],
+    images: ["/assets/projects/change-data-capture-kafka/kafka connect.png"],
     techs: ["Apache Kafka", "Docker", "PostgreSQL", "Debezium"],
     github: null,
-    preview: null
+    preview: null,
+    video: "/assets/projects/Videos/projeto-cdc-kafka.mp4"
   },
   {
     id: "order-sys",
@@ -171,10 +173,39 @@ export const projects = [
     title: "Microsystem Processador Distribuído",
     description: "Rede de controle de filas distribuídas com RabbitMQ mapeando o pattern Saga para transações cruzadas em microsserviços.",
     status: "Em evolução",
-    images: [],
+    images: ["/assets/projects/order-processing-system/order-processing-system.png"],
     techs: [".NET Core", "Node.js", "RabbitMQ", "MongoDB"],
     github: "https://github.com/edsonrdl/order-processing-system.git",
     preview: null
+  },
+  {
+    id: "system-management",
+    type: "Dashboard UI",
+    title: "System Management Dashboard",
+    description: "Dashboard com análise de vendas e pesquisa de pedidos, utilizando controle de tema Dark e Claro.",
+    status: "Concluído",
+    images: [
+      "/assets/projects/system management dashboard tema ligth dark/img-1-system-management.png",
+      "/assets/projects/system management dashboard tema ligth dark/img-2-system-management.png"
+    ],
+    techs: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/edsonrdl/sistema-gerenciador-dashboard-tema-escuro-claro",
+    preview: "https://edsonrdl.github.io/system-management-admin-dashboard-theme-dark-ligth/#"
+  },
+  {
+    id: "flash-serve",
+    type: "Web App & Mobile",
+    title: "Flash Serve",
+    description: "Serviço de entregas rápido com gestão de pedidos.",
+    status: "Concluído",
+    images: [
+      "/assets/projects/flash-serve/img-1-flash-serve.png",
+      "/assets/projects/flash-serve/img-2-flash-serve.png"
+    ],
+    techs: ["React Native", "UI/UX", "Gestão"],
+    github: null,
+    preview: null,
+    video: "/assets/projects/Videos/flash-serve.mp4"
   }
 ];
 
