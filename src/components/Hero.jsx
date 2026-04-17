@@ -12,7 +12,7 @@ const Hero = () => {
         
         {/* SVG Logo Animada (Gigante no fundo ou integrando o centro) */}
         <div style={{ marginBottom: '40px', animation: 'float 6s ease-in-out infinite, glowPulse 4s ease-in-out infinite' }}>
-          <img src="/assets/asi-logo.svg" alt="Asi Logo" style={{ width: '250px', height: 'auto', filter: 'drop-shadow(0 0 30px rgba(244,95,144,0.4))' }} />
+          <img src={import.meta.env.BASE_URL + 'assets/asi-logo.svg'} alt="Asi Logo" style={{ width: '250px', height: 'auto', filter: 'drop-shadow(0 0 30px rgba(244,95,144,0.4))' }} />
         </div>
 
         {/* Typographic Hero */}

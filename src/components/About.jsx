@@ -22,7 +22,7 @@ const About = () => {
           ))}
           
           <div style={{ marginTop: '50px' }}>
-            <a href="/assets/curriculo.pdf" download="Edson_Arquiteto_CV.pdf" target="_blank" className="btn btn-outline" style={{ border: '1px solid var(--primary)', color: 'var(--primary)', padding: '20px 40px' }}>
+            <a href={import.meta.env.BASE_URL + 'assets/CV_Edson_Rodrigo.pdf.pdf'} download="Edson_Arquiteto_CV.pdf" target="_blank" className="btn btn-outline" style={{ border: '1px solid var(--primary)', color: 'var(--primary)', padding: '20px 40px' }}>
               [ DOWNLOAD CURRÍCULO EM PDF ]
             </a>
           </div>
@@ -37,7 +37,7 @@ const About = () => {
           
           <div className="glass-card" style={{ padding: '40px' }}>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
-               <img src="/assets/asi-logo.svg" alt="Asi Logo" style={{ width: '120px' }} />
+               <img src={import.meta.env.BASE_URL + 'assets/asi-logo.svg'} alt="Asi Logo" style={{ width: '120px' }} />
             </div>
             {profile.asiCodeDescription.map((desc, idx) => (
                <p key={idx} style={{ color: 'var(--text-muted)', marginBottom: '15px' }}>{desc}</p>

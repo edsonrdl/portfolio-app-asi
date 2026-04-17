@@ -26,7 +26,7 @@ function App() {
       </main>
       
       <footer style={{ padding: '40px 24px', textAlign: 'center', borderTop: '1px solid var(--border-color)', marginTop: '50px' }}>
-        <img src="/assets/asi-logo.svg" alt="Asi Code Logo" style={{ width: '50px', marginBottom: '20px' }} />
+        <img src={import.meta.env.BASE_URL + 'assets/asi-logo.svg'} alt="Asi Code Logo" style={{ width: '50px', marginBottom: '20px' }} />
         <p style={{ color: 'var(--text-muted)' }}>&copy; 2026 Edson Lopes - Asi. Todos os direitos reservados.</p>
       </footer>
     </div>

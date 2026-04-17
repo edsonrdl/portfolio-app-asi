@@ -16,18 +16,18 @@ const Portfolio = () => {
             {/* O background é a imagem ou video renderizado */}
             {project.video ? (
               <video 
-                src={project.video} 
+                src={import.meta.env.BASE_URL + project.video.slice(1)} 
                 className="project-bg-media" 
                 loop 
                 muted 
                 playsInline
                 preload="none"
-                poster={project.images && project.images.length > 0 ? project.images[0] : ""}
+                poster={project.images && project.images.length > 0 ? import.meta.env.BASE_URL + project.images[0].slice(1) : ""}
                 onMouseEnter={(e) => e.target.play().catch(() => {})}
                 onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
               />
             ) : project.images && project.images.length > 0 ? (
-              <img src={project.images[0]} alt={project.title} className="project-bg-media" />
+              <img src={import.meta.env.BASE_URL + project.images[0].slice(1)} alt={project.title} className="project-bg-media" />
             ) : null}
 
             <div className="project-overlay"></div>
