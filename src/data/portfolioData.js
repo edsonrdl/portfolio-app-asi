@@ -60,14 +60,26 @@ export const history = {
       ]
     },
     {
+      company: "Máxima Segurança (Consultoria & Arquitetura)",
+      period: "Mar 2025 - Jun 2025",
+      role: "Arquiteto de Software Corporativo",
+      description: "Atuação como Arquiteto prestando serviços de desenvolvimento e arquitetura voltados à construção de aplicações corporativas de alta performance implantadas em ambientes on-premises (Proxmox).",
+      bullets: [
+        "Levantamento detalhado de requisitos, mapeamento de processos, e modelagem conceitual/física de bancos de dados.",
+        "Definição de arquiteturas distribuídas e modulares baseadas em microsserviços com DDD.",
+        "Desenvolvimento backend construído do zero utilizando Java 21, Spring Boot, PostgreSQL e MongoDB."
+      ]
+    },
+    {
       company: "Máxima Segurança",
       period: "Abr 2024 - Fev 2025",
-      role: "Arquiteto de Software Corporativo",
-      description: "Projeto completo desde o levantamento inicial até a modelagem física, concebendo soluções modulares e de alta performance implantadas em grids on-premises usando Proxmox.",
+      role: "Desenvolvedor Full Stack",
+      description: "Concepção, desenvolvimento e entrega de uma nova aplicação corporativa construída do zero, além de modernização de sistemas legados focada em eficiência operacional e segurança.",
       bullets: [
-        "Definição de arquiteturas distribuídas e modulares baseadas em DDD com bancos MongoDB e PostgreSQL.",
-        "Desenvolvimento backend de alto padrão transacional com Java 21, Spring Boot e RabbitMQ.",
-        "Automação e esteiras de Deploy usando Harbor e Docker integrados a fluxos do GitHub Actions."
+        "Desenvolvimento backend seguro (Java EE, Spring Boot, JBoss/Tomcat) e interfaces de usuário modernas (Angular 18 e Delphi).",
+        "Implementação de Change Data Capture (CDC) via Kafka Connect para sincronização de sistemas e mensageria com RabbitMQ.",
+        "Modelagem e persistência de dados no SQL Server e Firebird, garantindo consistência com o Padrão DAO.",
+        "Liderança na implantação de infraestrutura on-premises (Proxmox, Harbor, Docker) e automação de CI/CD via GitHub Actions."
       ]
     },
     {
